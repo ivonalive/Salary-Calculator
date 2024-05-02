@@ -33,3 +33,7 @@ function addEmployee(event){
 function deleteEmployee(event){
     event.target.parentElement.parentElement.remove();
 }
+
+function totalMonthly(){
+    
+}
