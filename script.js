@@ -9,7 +9,7 @@ function addEmployee(event){
     // Connecting each inout field to table
     let firstName = document.querySelector('[data-testid="firstNameInput"]').value;
     let lastName = document.querySelector('[data-testid="lastNameInput"]').value;
-    let idInput = document.querySelector('[data-testid="lastNameInput"]').value;
+    let idInput = document.querySelector('[data-testid="idInput"]').value;
     let title = document.querySelector('[data-testid="titleInput"]').value;
     let salary = document.querySelector('[data-testid="annualSalaryInput"]').value;
     // Checking if id refrences are working properly
