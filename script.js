@@ -44,7 +44,7 @@ function totalMonthly(){
         sum += Number(salaries[i].textContent);
     }
     //cheking is sum is being calculated correctly
-   console.log(sum);
+   console.log('total sum:',sum);
 
    monthlySum = Math.floor(sum / 12);
    let monthly = document.querySelector('.totalMonthly');
