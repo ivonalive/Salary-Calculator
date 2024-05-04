@@ -43,7 +43,7 @@ function totalMonthly(){
     for (let i = 0; i < salaries.length; i++){
         sum += Number(salaries[i].textContent);
     }
-    //cheking is sum is beingcalculated correctly
+    //cheking is sum is being calculated correctly
    console.log(sum);
 
    monthlySum = Math.floor(sum / 12);
