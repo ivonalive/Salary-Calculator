@@ -3,7 +3,7 @@ console.log('js');
 
 function addEmployee(event){
     // Checking if the button is wokring
-    console.log('Does this button/function work?');
+    // console.log('Does this button/function work?');
     event.preventDefault();
 
     // Connecting each inout field to table
@@ -13,7 +13,7 @@ function addEmployee(event){
     let title = document.querySelector('[data-testid="titleInput"]').value;
     let salary = document.querySelector('[data-testid="annualSalaryInput"]').value;
     // Checking if id refrences are working properly
-    console.log(firstName);
+    // console.log(firstName);
 
     // Getting id of table body to append to
     let tBody = document.querySelector('#tbody');
@@ -23,11 +23,13 @@ function addEmployee(event){
         <td>${lastName}</td>
         <td>${idInput}</td>
         <td>${title}</td>
-        <td>${salary}</td>
+        <td class="salary">${salary}</td>
         <td> <button onCLick="deleteEmployee(event)"> Delete </button></td>
-     </tr>
+    </tr>
 
     `;
+    totalMonthly();
+
 };
 
 function deleteEmployee(event){
@@ -36,4 +38,15 @@ function deleteEmployee(event){
 
 function totalMonthly(){
     
+    let sum = 0;
+    let salaries = document.querySelectorAll('.salary');
+    for (let i = 0; i < salaries.length; i++){
+        sum += Number(salaries[i].textContent);
+    }
+   console.log(sum);
+   monthlySum = sum / 12;
+   let monthly = document.querySelector('.totalMonthly');
+   monthly.innerHTML += `
+    ${monthlySum}
+   `
 }
