@@ -50,3 +50,4 @@ function totalMonthly(){
     ${monthlySum}
    `
 }
+////// total monthly showing each time function is called instead of recplacing ///
