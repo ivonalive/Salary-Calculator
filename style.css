@@ -40,3 +40,16 @@ table tr:nth-child(even) {
     background: #F8F8F8;
 }
 
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #324960;
+    color: white;
+}
+
+footer {
+    text-align: center;
+}

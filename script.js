@@ -1,5 +1,6 @@
 // Checking if the js file is connected
 console.log('js');
+let monthlySalary = totalMonthly();
 
 function addEmployee(event){
     // Checking if the button is wokring
@@ -29,7 +30,6 @@ function addEmployee(event){
 
     `;
     totalMonthly();
-
 };
 
 function deleteEmployee(event){
@@ -43,11 +43,19 @@ function totalMonthly(){
     for (let i = 0; i < salaries.length; i++){
         sum += Number(salaries[i].textContent);
     }
+    //cheking is sum is beingcalculated correctly
    console.log(sum);
-   monthlySum = sum / 12;
+
+   monthlySum = Math.floor(sum / 12);
    let monthly = document.querySelector('.totalMonthly');
    monthly.innerHTML += `
     ${monthlySum}
-   `
+   `;
+   if ( monthlySum > 20000){
+    monthly.style.backgroundColor = 'red';
+    alert("Warning: Monthly budget is over $20,000!");
+}
+
 }
 ////// total monthly showing each time function is called instead of recplacing ///
+
