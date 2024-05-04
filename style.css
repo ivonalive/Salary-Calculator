@@ -53,3 +53,7 @@ header {
 footer {
     text-align: center;
 }
+
+.totalMOnthly {
+    width:fit-content;
+}
