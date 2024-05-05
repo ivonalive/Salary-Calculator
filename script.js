@@ -48,14 +48,12 @@ function totalMonthly(){
 
    monthlySum = Math.floor(sum / 12);
    let monthly = document.querySelector('.totalMonthly');
-   monthly.innerHTML += `
-    ${monthlySum}
-   `;
+   monthly.textContent = monthlySum;
+
    if ( monthlySum > 20000){
     monthly.style.backgroundColor = 'red';
     alert("Warning: Monthly budget is over $20,000!");
-}
-
+    }
 }
 ////// total monthly showing each time function is called instead of recplacing ///
 
