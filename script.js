@@ -55,5 +55,5 @@ function totalMonthly(){
     alert("Warning: Monthly budget is over $20,000!");
     }
 }
-////// total monthly showing each time function is called instead of recplacing ///
+
 
